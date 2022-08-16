@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+    {% block cont %} 
+        <div class="col-6">
+          <h1 class="col-12">LOG IN</h1>
+          <form class="col-12" action="login" method="post">
+              {% csrf_token %}
+            <label for="username" class="col-3">USER NAME : </label>
+            <input id="username" type="text" class="col-9" name="name" required>
+            <label for="password" class="col-3">USER NAME : </label>
+            <input id="password" type="password" class="col-9" name="pass" required>
+              <h5 class="txt-danger">{{err}}</h5>
+            <button type="submit" class="btn-success col-4 m-3" value="LOG IN">LOG IN</button>
+
+
+          </form>
+        </div>
+    
+    {% endblock %}
