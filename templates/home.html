@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
     {% block cont %}
+<body class="bg-success">
 <div class="col-12 row container justify-center">
-    <h1 class="col-12 m-5 bg-warning">HI {{name}}</h1>
-    <h3 class="col-12 m-5 bg-warning">Welcome to home page</h3>
-    <h5 class="col-12 m-5 bg-warning">You are logged in</h5>
-    <img class="col-12" src="assets/hifi.gif)" alt="" srcset="">
+    <h1 class="col-12 m-5 text-danger">Hi.... {{name}}</h1>
+    <h3 class="col-12 m-5 ">Welcome to home page</h3>
+     <img class="col-12" src="{{STATIC_URL}}asset/fifi.gif" alt="cannot load image" >
+    <h5 class="col-12 m-5 ">You are logged in</h5>
+
     
 </div>
 
